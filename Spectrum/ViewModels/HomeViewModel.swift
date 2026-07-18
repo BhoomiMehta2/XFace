@@ -17,6 +17,9 @@ public final class HomeViewModel {
     /// Themes that have been explicitly added to Xcode's FontAndColorThemes folder.
     public var addedToXcodeThemes: [Theme] = []
     
+    /// The name of the theme currently applied to Xcode.
+    public var activeThemeName: String? = nil
+    
     /// Determines whether the import sheet is presented.
     public var isImporting: Bool = false
     
@@ -63,6 +66,8 @@ public final class HomeViewModel {
         
         let persistedAdded = Self.loadPersistedAddedThemes()
         self.addedToXcodeThemes = persistedAdded
+        
+        self.activeThemeName = UserDefaults.standard.string(forKey: "ActiveXcodeTheme")
         
         // Default to the first imported theme if exists, otherwise default to Dracula
         self.selectedTheme = persisted.first ?? loaded.first(where: { $0.name.contains("Dracula") }) ?? .dracula
@@ -176,6 +181,10 @@ public final class HomeViewModel {
     /// Applies the theme in Xcode preferences.
     public func applyTheme() {
         let needsRestart = ThemeInstaller.applyTheme(themeName: selectedTheme.name)
+        
+        activeThemeName = selectedTheme.name
+        UserDefaults.standard.set(selectedTheme.name, forKey: "ActiveXcodeTheme")
+        
         if needsRestart {
             self.showRestartAlert = true
         } else {

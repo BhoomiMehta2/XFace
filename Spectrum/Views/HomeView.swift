@@ -64,7 +64,16 @@ public struct HomeView: View {
                         .buttonStyle(.bordered)
                         .controlSize(.large)
                         
-                        if viewModel.addedToXcodeThemes.contains(where: { $0.name == viewModel.selectedTheme.name }) {
+                        if viewModel.activeThemeName == viewModel.selectedTheme.name {
+                            Button(action: {}) {
+                                Label("Applied", systemImage: "checkmark.circle.fill")
+                                    .fontWeight(.semibold)
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .tint(Color(NSColor.systemGray))
+                            .controlSize(.large)
+                            .disabled(true)
+                        } else if viewModel.addedToXcodeThemes.contains(where: { $0.name == viewModel.selectedTheme.name }) {
                             Button(action: {
                                 viewModel.applyTheme()
                             }) {
