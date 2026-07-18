@@ -26,19 +26,6 @@ public struct SidebarView: View {
                 Text("Built-in").font(.subheadline).fontWeight(.semibold).foregroundColor(.secondary)
             }
             
-            if !viewModel.importedThemes.isEmpty {
-                Section(isExpanded: $isImportedExpanded) {
-                    ForEach(viewModel.importedThemes) { theme in
-                        ThemeCard(theme: theme, isSelected: viewModel.selectedTheme.name == theme.name)
-                            .onTapGesture {
-                                viewModel.selectTheme(theme)
-                            }
-                    }
-                } header: {
-                    Text("Imported").font(.subheadline).fontWeight(.semibold).foregroundColor(.secondary)
-                }
-            }
-            
             if !viewModel.addedToXcodeThemes.isEmpty {
                 Section(isExpanded: $isAddedExpanded) {
                     ForEach(viewModel.addedToXcodeThemes) { theme in
@@ -49,6 +36,19 @@ public struct SidebarView: View {
                     }
                 } header: {
                     Text("Added to Xcode").font(.subheadline).fontWeight(.semibold).foregroundColor(.secondary)
+                }
+            }
+            
+            if !viewModel.importedThemes.isEmpty {
+                Section(isExpanded: $isImportedExpanded) {
+                    ForEach(viewModel.importedThemes) { theme in
+                        ThemeCard(theme: theme, isSelected: viewModel.selectedTheme.name == theme.name)
+                            .onTapGesture {
+                                viewModel.selectTheme(theme)
+                            }
+                    }
+                } header: {
+                    Text("Imported").font(.subheadline).fontWeight(.semibold).foregroundColor(.secondary)
                 }
             }
         }
