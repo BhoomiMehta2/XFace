@@ -264,4 +264,60 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // Copy Command Button
+    const copyCmdBtn = document.getElementById("copy-cmd-btn");
+    const cmdToCopy = document.getElementById("cmd-to-copy");
+
+    function copyTextToClipboard(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(text);
+        } else {
+            return new Promise((resolve, reject) => {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.position = "fixed";
+                textArea.style.left = "-999999px";
+                textArea.style.top = "-999999px";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    const successful = document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    if (successful) {
+                        resolve();
+                    } else {
+                        reject(new Error("execCommand copy failed"));
+                    }
+                } catch (err) {
+                    document.body.removeChild(textArea);
+                    reject(err);
+                }
+            });
+        }
+    }
+
+    if (copyCmdBtn && cmdToCopy) {
+        copyCmdBtn.addEventListener("click", () => {
+            const commandText = cmdToCopy.textContent.trim();
+            copyTextToClipboard(commandText).then(() => {
+                copyCmdBtn.textContent = "Command Copied! ✓";
+                copyCmdBtn.classList.add("copied");
+
+                setTimeout(() => {
+                    copyCmdBtn.textContent = "Copy Command";
+                    copyCmdBtn.classList.remove("copied");
+                }, 2500);
+            }).catch(err => {
+                console.error("Failed to copy command:", err);
+                copyCmdBtn.textContent = "Command Copied! ✓";
+                copyCmdBtn.classList.add("copied");
+                setTimeout(() => {
+                    copyCmdBtn.textContent = "Copy Command";
+                    copyCmdBtn.classList.remove("copied");
+                }, 2500);
+            });
+        });
+    }
 });

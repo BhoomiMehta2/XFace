@@ -914,6 +914,42 @@ body {
     color: rgba(255, 255, 255, 0.4);
 }
 
+.command-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.copy-cmd-btn {
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    font-family: 'Inter', sans-serif;
+}
+
+.copy-cmd-btn:hover {
+    background: var(--accent-purple);
+    color: #ffffff;
+    border-color: var(--accent-purple-glow);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.copy-cmd-btn.copied {
+    background: #10b981 !important;
+    color: #ffffff !important;
+    border-color: #10b981 !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
 .term-body {
     padding: 16px 20px;
 }

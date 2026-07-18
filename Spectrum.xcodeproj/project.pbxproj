@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0972F3A1D1D0145A15C57A11 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C7DB745077DF681D307AD /* HomeViewModel.swift */; };
+		3BCB6AFB3286CDE8E8F2C935 /* PreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729FD5FC5019C1E0A3584314 /* PreviewViewModel.swift */; };
+		86E3ECCC85FB73D09DA5FA7E /* ThemeForgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581D6A098506944C3AFC1F6 /* ThemeForgeApp.swift */; };
+		B085BA77CA9243E9D0274842 /* VSCodeThemeImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B023681BCDBB5E865123AC1 /* VSCodeThemeImporter.swift */; };
+		CEEFDA04116D8DBA54EE3469 /* XcodeThemeExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22D333A8A4113DF4AAAB119 /* XcodeThemeExporter.swift */; };
+		D98C2DE8DED64B139B11310C /* ThemeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC345855B102CC57F4C8B7A4 /* ThemeConverter.swift */; };
+		A62B1CDD0B8BB7FD0C304F24 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333E1E50C20A2109F32C7C3F /* ThemeColor.swift */; };
+		16228090BAC07345A7FACEC2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F7B1977670421606FD606 /* Theme.swift */; };
+		210401E63FE12B4FD531C953 /* XMLWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4231C79931A37C6655103CC9 /* XMLWriter.swift */; };
+		9ADE40D11F82185B2ED1B1F6 /* ColorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2109AC59BB4D12CB6ECBB0 /* ColorParser.swift */; };
+		9E72D447A398F88942DC1E17 /* PreviewEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D624EFFFB3A67941BAAC9 /* PreviewEditor.swift */; };
+		A181D498690DC5E6EE6C9026 /* ThemeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F60C270AF8BBC4C2A0D64 /* ThemeCard.swift */; };
+		1AB7693DB353B57E017A4AFC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A611CC0FA9364F4CB9A256B2 /* HomeView.swift */; };
+		4DB82A727D104AC10237D950 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE3C615F821C63EABB65C1 /* SidebarView.swift */; };
+		1A631B7FC753970223C49B1D /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29685112C75F9839467B1932 /* ImportView.swift */; };
+		E736FFF96B08B3AEF610A330 /* ThemeExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7296587BE5CA737FE8D015DB /* ThemeExporter.swift */; };
+		B8DA221BA981B538A5269C7F /* VSCodeMarketplaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2FC90E9B16976362CBA566 /* VSCodeMarketplaceService.swift */; };
+		595B091AC6B1F778D1F2BD59 /* ThemeInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226B345615327990E9360B44 /* ThemeInstaller.swift */; };
+		9C2D42E57DF424F665570DB9 /* Catppuccin.json in Resources */ = {isa = PBXBuildFile; fileRef = E9F08F886DDA908E7285E0FA /* Catppuccin.json */; };
+		0E8298D521E976FCCA3D12F9 /* OneDark.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F2F9085E541D974BAA4669C /* OneDark.json */; };
+		B90BB5A80A01F97FB9F2F6A6 /* Dracula.json in Resources */ = {isa = PBXBuildFile; fileRef = 5AC8284E001953085708F1B2 /* Dracula.json */; };
+		22697B2EAB27FCA453B9C14A /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 91A8C84F19828148F3D99792 /* AppIcon.icns */; };
+		A2C631BE385A3ACA75D8E91D /* Nord.json in Resources */ = {isa = PBXBuildFile; fileRef = 034C0513486CBDA45668F12E /* Nord.json */; };
+		E4EB30B971ADD3F88F5B7047 /* TokyoNight.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BC3F4CEA9F53701CE964CE8 /* TokyoNight.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56D6BF137F19233FC5FF3593 /* Spectrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		239C7DB745077DF681D307AD /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeViewModel.swift"; sourceTree = "<group>"; };
+		729FD5FC5019C1E0A3584314 /* PreviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PreviewViewModel.swift"; sourceTree = "<group>"; };
+		6581D6A098506944C3AFC1F6 /* ThemeForgeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeForgeApp.swift"; sourceTree = "<group>"; };
+		5B023681BCDBB5E865123AC1 /* VSCodeThemeImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VSCodeThemeImporter.swift"; sourceTree = "<group>"; };
+		C22D333A8A4113DF4AAAB119 /* XcodeThemeExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XcodeThemeExporter.swift"; sourceTree = "<group>"; };
+		DC345855B102CC57F4C8B7A4 /* ThemeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeConverter.swift"; sourceTree = "<group>"; };
+		333E1E50C20A2109F32C7C3F /* ThemeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeColor.swift"; sourceTree = "<group>"; };
+		C91F7B1977670421606FD606 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theme.swift"; sourceTree = "<group>"; };
+		4231C79931A37C6655103CC9 /* XMLWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XMLWriter.swift"; sourceTree = "<group>"; };
+		0B2109AC59BB4D12CB6ECBB0 /* ColorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorParser.swift"; sourceTree = "<group>"; };
+		F19D624EFFFB3A67941BAAC9 /* PreviewEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PreviewEditor.swift"; sourceTree = "<group>"; };
+		E48F60C270AF8BBC4C2A0D64 /* ThemeCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeCard.swift"; sourceTree = "<group>"; };
+		A611CC0FA9364F4CB9A256B2 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeView.swift"; sourceTree = "<group>"; };
+		FEDE3C615F821C63EABB65C1 /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SidebarView.swift"; sourceTree = "<group>"; };
+		29685112C75F9839467B1932 /* ImportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImportView.swift"; sourceTree = "<group>"; };
+		7296587BE5CA737FE8D015DB /* ThemeExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeExporter.swift"; sourceTree = "<group>"; };
+		EF2FC90E9B16976362CBA566 /* VSCodeMarketplaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VSCodeMarketplaceService.swift"; sourceTree = "<group>"; };
+		226B345615327990E9360B44 /* ThemeInstaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThemeInstaller.swift"; sourceTree = "<group>"; };
+		E9F08F886DDA908E7285E0FA /* Catppuccin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Catppuccin.json"; sourceTree = "<group>"; };
+		8F2F9085E541D974BAA4669C /* OneDark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "OneDark.json"; sourceTree = "<group>"; };
+		5AC8284E001953085708F1B2 /* Dracula.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Dracula.json"; sourceTree = "<group>"; };
+		91A8C84F19828148F3D99792 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "AppIcon.icns"; sourceTree = "<group>"; };
+		034C0513486CBDA45668F12E /* Nord.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Nord.json"; sourceTree = "<group>"; };
+		7BC3F4CEA9F53701CE964CE8 /* TokyoNight.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "TokyoNight.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E941DA8187B32B086A8E8098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F8F4C189B87527510D46ABE /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				A2FF9BC57277E9FA2AA21C75,
+				0EDE0228E9A7D89A61CD77AE,
+				C73B4D468F70728CD949A1FF,
+				1D0A6A6D9A5BA3CB20A83235,
+				0F93DDFF263BBF545428E965,
+				A1AF5AD3088A36FFF1D48418,
+				EF22781981FB659C6C808413,
+				4148E3734A08599A45B92D82,
+				D76A3D17190E01256A526F32,
+				8FDF4BD84CEFC8A52E4DF104,
+				61E52A8379533381FB59B27D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61E52A8379533381FB59B27D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D6BF137F19233FC5FF3593 /* Spectrum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2FF9BC57277E9FA2AA21C75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6581D6A098506944C3AFC1F6 /* ThemeForgeApp.swift */,
+			);
+			name = App;
+			path = Spectrum/App;
+			sourceTree = "<group>";
+		};
+		0EDE0228E9A7D89A61CD77AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				333E1E50C20A2109F32C7C3F /* ThemeColor.swift */,
+				C91F7B1977670421606FD606 /* Theme.swift */,
+			);
+			name = Models;
+			path = Spectrum/Models;
+			sourceTree = "<group>";
+		};
+		C73B4D468F70728CD949A1FF /* Importers */ = {
+			isa = PBXGroup;
+			children = (
+				5B023681BCDBB5E865123AC1 /* VSCodeThemeImporter.swift */,
+			);
+			name = Importers;
+			path = Spectrum/Importers;
+			sourceTree = "<group>";
+		};
+		1D0A6A6D9A5BA3CB20A83235 /* Exporters */ = {
+			isa = PBXGroup;
+			children = (
+				C22D333A8A4113DF4AAAB119 /* XcodeThemeExporter.swift */,
+			);
+			name = Exporters;
+			path = Spectrum/Exporters;
+			sourceTree = "<group>";
+		};
+		0F93DDFF263BBF545428E965 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				DC345855B102CC57F4C8B7A4 /* ThemeConverter.swift */,
+			);
+			name = Converters;
+			path = Spectrum/Converters;
+			sourceTree = "<group>";
+		};
+		A1AF5AD3088A36FFF1D48418 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7296587BE5CA737FE8D015DB /* ThemeExporter.swift */,
+				EF2FC90E9B16976362CBA566 /* VSCodeMarketplaceService.swift */,
+				226B345615327990E9360B44 /* ThemeInstaller.swift */,
+			);
+			name = Services;
+			path = Spectrum/Services;
+			sourceTree = "<group>";
+		};
+		EF22781981FB659C6C808413 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4231C79931A37C6655103CC9 /* XMLWriter.swift */,
+				0B2109AC59BB4D12CB6ECBB0 /* ColorParser.swift */,
+			);
+			name = Utilities;
+			path = Spectrum/Utilities;
+			sourceTree = "<group>";
+		};
+		4148E3734A08599A45B92D82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9F08F886DDA908E7285E0FA /* Catppuccin.json */,
+				8F2F9085E541D974BAA4669C /* OneDark.json */,
+				5AC8284E001953085708F1B2 /* Dracula.json */,
+				91A8C84F19828148F3D99792 /* AppIcon.icns */,
+				034C0513486CBDA45668F12E /* Nord.json */,
+				7BC3F4CEA9F53701CE964CE8 /* TokyoNight.json */,
+			);
+			name = Resources;
+			path = Spectrum/Resources;
+			sourceTree = "<group>";
+		};
+		D76A3D17190E01256A526F32 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				239C7DB745077DF681D307AD /* HomeViewModel.swift */,
+				729FD5FC5019C1E0A3584314 /* PreviewViewModel.swift */,
+			);
+			name = ViewModels;
+			path = Spectrum/ViewModels;
+			sourceTree = "<group>";
+		};
+		8FDF4BD84CEFC8A52E4DF104 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F19D624EFFFB3A67941BAAC9 /* PreviewEditor.swift */,
+				E48F60C270AF8BBC4C2A0D64 /* ThemeCard.swift */,
+				A611CC0FA9364F4CB9A256B2 /* HomeView.swift */,
+				FEDE3C615F821C63EABB65C1 /* SidebarView.swift */,
+				29685112C75F9839467B1932 /* ImportView.swift */,
+			);
+			name = Views;
+			path = Spectrum/Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A45A32BFE3AC1112CA98695 /* Spectrum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D08FAC3ED334CCC706B8AF /* Build configuration list for PBXNativeTarget "Spectrum" */;
+			buildPhases = (
+				5B1B2B2ECB524BA8C71F3188 /* Sources */,
+				E941DA8187B32B086A8E8098 /* Frameworks */,
+				C5926192950FAB508AE8C163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spectrum;
+			productName = Spectrum;
+			productReference = 56D6BF137F19233FC5FF3593 /* Spectrum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EBB3C1D32DC0DA851FD0DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2A45A32BFE3AC1112CA98695 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = 945A56F5D4EFEF9EBF2BD4D8 /* Build configuration list for PBXProject "Spectrum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F8F4C189B87527510D46ABE /* CustomTemplate */;
+			productRefGroup = 61E52A8379533381FB59B27D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A45A32BFE3AC1112CA98695 /* Spectrum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5926192950FAB508AE8C163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2D42E57DF424F665570DB9 /* Catppuccin.json in Resources */,
+				0E8298D521E976FCCA3D12F9 /* OneDark.json in Resources */,
+				B90BB5A80A01F97FB9F2F6A6 /* Dracula.json in Resources */,
+				22697B2EAB27FCA453B9C14A /* AppIcon.icns in Resources */,
+				A2C631BE385A3ACA75D8E91D /* Nord.json in Resources */,
+				E4EB30B971ADD3F88F5B7047 /* TokyoNight.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B1B2B2ECB524BA8C71F3188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0972F3A1D1D0145A15C57A11 /* HomeViewModel.swift in Sources */,
+				3BCB6AFB3286CDE8E8F2C935 /* PreviewViewModel.swift in Sources */,
+				86E3ECCC85FB73D09DA5FA7E /* ThemeForgeApp.swift in Sources */,
+				B085BA77CA9243E9D0274842 /* VSCodeThemeImporter.swift in Sources */,
+				CEEFDA04116D8DBA54EE3469 /* XcodeThemeExporter.swift in Sources */,
+				D98C2DE8DED64B139B11310C /* ThemeConverter.swift in Sources */,
+				A62B1CDD0B8BB7FD0C304F24 /* ThemeColor.swift in Sources */,
+				16228090BAC07345A7FACEC2 /* Theme.swift in Sources */,
+				210401E63FE12B4FD531C953 /* XMLWriter.swift in Sources */,
+				9ADE40D11F82185B2ED1B1F6 /* ColorParser.swift in Sources */,
+				9E72D447A398F88942DC1E17 /* PreviewEditor.swift in Sources */,
+				A181D498690DC5E6EE6C9026 /* ThemeCard.swift in Sources */,
+				1AB7693DB353B57E017A4AFC /* HomeView.swift in Sources */,
+				4DB82A727D104AC10237D950 /* SidebarView.swift in Sources */,
+				1A631B7FC753970223C49B1D /* ImportView.swift in Sources */,
+				E736FFF96B08B3AEF610A330 /* ThemeExporter.swift in Sources */,
+				B8DA221BA981B538A5269C7F /* VSCodeMarketplaceService.swift in Sources */,
+				595B091AC6B1F778D1F2BD59 /* ThemeInstaller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		59261EFC476A8B0E32E83DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					ALWAYS_SEARCH_USER_PATHS = NO;
+					CLANG_ANALYZER_NONNULL = YES;
+					CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+					CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+					CLANG_ENABLE_MODULES = YES;
+					CLANG_ENABLE_OBJC_ARC = YES;
+					CLANG_ENABLE_OBJC_WEAK = YES;
+					CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+					CLANG_WARN_BOOL_CONVERSION = YES;
+					CLANG_WARN_COMMA = YES;
+					CLANG_WARN_CONSTANT_CONVERSION = YES;
+					CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+					CLANG_WARN_DIRECT_OBJC_RESERVED_IMPROPER_ACCESS = YES;
+					CLANG_WARN_DOCUMENTATION_FILES = YES;
+					CLANG_WARN_EMPTY_BODY = YES;
+					CLANG_WARN_ENUM_CONVERSION = YES;
+					CLANG_WARN_INFINITE_RECURSION = YES;
+					CLANG_WARN_INT_CONVERSION = YES;
+					CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+					CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+					CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+					CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+					CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+					CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+					CLANG_WARN_STRICT_PROTOTYPES = YES;
+					CLANG_WARN_SUSPICIOUS_MOVE = YES;
+					CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+					CLANG_WARN_UNREACHABLE_CODE = YES;
+					COPY_PHASE_STRIP = NO;
+					DEBUG_INFORMATION_FORMAT = dwarf;
+					ENABLE_STRICT_OBJC_MSGSEND = YES;
+					ENABLE_TESTABILITY = YES;
+					GCC_C_LANGUAGE_STANDARD = gnu17;
+					GCC_DYNAMIC_NO_PIC = NO;
+					GCC_NO_COMMON_BLOCKS = YES;
+					GCC_OPTIMIZATION_LEVEL = 0;
+					GCC_PREPROCESSOR_DEFINITIONS = (
+						"DEBUG=1",
+						"$(inherited)",
+					);
+					GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+					GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+					GCC_WARN_UNDECLARED_SELECTOR = YES;
+					GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+					GCC_WARN_UNUSED_FUNCTION = YES;
+					GCC_WARN_UNUSED_VARIABLE = YES;
+					MACOSX_DEPLOYMENT_TARGET = 15.0;
+					MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+					MTL_FAST_MATH = YES;
+					ONLY_ACTIVE_ARCH = YES;
+					SDKROOT = macosx;
+					SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+					SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				};
+			name = Debug;
+		};
+		94833F6D31EDD7AD7A2DC7E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					ALWAYS_SEARCH_USER_PATHS = NO;
+					CLANG_ANALYZER_NONNULL = YES;
+					CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+					CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+					CLANG_ENABLE_MODULES = YES;
+					CLANG_ENABLE_OBJC_ARC = YES;
+					CLANG_ENABLE_OBJC_WEAK = YES;
+					CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+					CLANG_WARN_BOOL_CONVERSION = YES;
+					CLANG_WARN_COMMA = YES;
+					CLANG_WARN_CONSTANT_CONVERSION = YES;
+					CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+					CLANG_WARN_DIRECT_OBJC_RESERVED_IMPROPER_ACCESS = YES;
+					CLANG_WARN_DOCUMENTATION_FILES = YES;
+					CLANG_WARN_EMPTY_BODY = YES;
+					CLANG_WARN_ENUM_CONVERSION = YES;
+					CLANG_WARN_INFINITE_RECURSION = YES;
+					CLANG_WARN_INT_CONVERSION = YES;
+					CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+					CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+					CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+					CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+					CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+					CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+					CLANG_WARN_STRICT_PROTOTYPES = YES;
+					CLANG_WARN_SUSPICIOUS_MOVE = YES;
+					CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+					CLANG_WARN_UNREACHABLE_CODE = YES;
+					COPY_PHASE_STRIP = NO;
+					DEBUG_INFORMATION_FORMAT = dwarf;
+					ENABLE_STRICT_OBJC_MSGSEND = YES;
+					ENABLE_TESTABILITY = YES;
+					GCC_C_LANGUAGE_STANDARD = gnu17;
+					GCC_DYNAMIC_NO_PIC = NO;
+					GCC_NO_COMMON_BLOCKS = YES;
+					GCC_OPTIMIZATION_LEVEL = s;
+					GCC_PREPROCESSOR_DEFINITIONS = (
+						"DEBUG=1",
+						"$(inherited)",
+					);
+					GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+					GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+					GCC_WARN_UNDECLARED_SELECTOR = YES;
+					GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+					GCC_WARN_UNUSED_FUNCTION = YES;
+					GCC_WARN_UNUSED_VARIABLE = YES;
+					MACOSX_DEPLOYMENT_TARGET = 15.0;
+					MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+					MTL_FAST_MATH = YES;
+					ONLY_ACTIVE_ARCH = NO;
+					SDKROOT = macosx;
+					SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+					SWIFT_OPTIMIZATION_LEVEL = "-O";
+				};
+			name = Release;
+		};
+		B48E68C671731E226B0D5E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+					CODE_SIGN_STYLE = Automatic;
+					COMBINE_HIDPI_IMAGES = YES;
+					DEVELOPMENT_ASSET_PATHS = "";
+					ENABLE_PREVIEWS = YES;
+					GENERATE_INFOPLIST_FILE = NO;
+					INFOPLIST_FILE = "Spectrum/Resources/Info.plist";
+					LD_RUNPATH_SEARCH_PATHS = (
+						"$(inherited)",
+						"@executable_path/../Frameworks",
+					);
+					MACOSX_DEPLOYMENT_TARGET = 15.0;
+					PRODUCT_BUNDLE_IDENTIFIER = com.bhoomi.Spectrum;
+					PRODUCT_NAME = "$(TARGET_NAME)";
+					SWIFT_VERSION = 6.0;
+				};
+			name = Debug;
+		};
+		20B39249436542D3033F45A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+					ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+					CODE_SIGN_STYLE = Automatic;
+					COMBINE_HIDPI_IMAGES = YES;
+					DEVELOPMENT_ASSET_PATHS = "";
+					ENABLE_PREVIEWS = YES;
+					GENERATE_INFOPLIST_FILE = NO;
+					INFOPLIST_FILE = "Spectrum/Resources/Info.plist";
+					LD_RUNPATH_SEARCH_PATHS = (
+						"$(inherited)",
+						"@executable_path/../Frameworks",
+					);
+					MACOSX_DEPLOYMENT_TARGET = 15.0;
+					PRODUCT_BUNDLE_IDENTIFIER = com.bhoomi.Spectrum;
+					PRODUCT_NAME = "$(TARGET_NAME)";
+					SWIFT_VERSION = 6.0;
+				};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		945A56F5D4EFEF9EBF2BD4D8 /* Build configuration list for PBXProject "Spectrum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59261EFC476A8B0E32E83DA2 /* Debug */,
+				94833F6D31EDD7AD7A2DC7E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D08FAC3ED334CCC706B8AF /* Build configuration list for PBXNativeTarget "Spectrum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48E68C671731E226B0D5E42 /* Debug */,
+				20B39249436542D3033F45A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EBB3C1D32DC0DA851FD0DBB /* Project object */;
+}
