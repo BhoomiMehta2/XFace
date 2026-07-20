@@ -199,6 +199,32 @@ public final class HomeViewModel {
         }
     }
     
+    /// Completely deletes a theme from the user's custom lists.
+    public func deleteTheme(_ theme: Theme) {
+        // Try removing it from Xcode if it was installed there
+        try? ThemeInstaller.removeTheme(themeName: theme.name)
+        
+        if let index = addedToXcodeThemes.firstIndex(where: { $0.name == theme.name }) {
+            addedToXcodeThemes.remove(at: index)
+            saveAddedThemes()
+        }
+        
+        if let index = importedThemes.firstIndex(where: { $0.name == theme.name }) {
+            importedThemes.remove(at: index)
+            saveThemes()
+        }
+        
+        if activeThemeName == theme.name {
+            activeThemeName = nil
+            UserDefaults.standard.removeObject(forKey: "ActiveXcodeTheme")
+        }
+        
+        // If the selected theme was deleted, select something else
+        if selectedTheme.name == theme.name {
+            selectedTheme = importedThemes.first ?? builtInThemes.first ?? .dracula
+        }
+    }
+    
     /// Applies the theme in Xcode preferences.
     public func applyTheme() {
         let needsRestart = ThemeInstaller.applyTheme(themeName: selectedTheme.name)

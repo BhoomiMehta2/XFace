@@ -33,6 +33,13 @@ public struct SidebarView: View {
                             .onTapGesture {
                                 viewModel.selectTheme(theme)
                             }
+                            .contextMenu {
+                                Button(role: .destructive) {
+                                    viewModel.deleteTheme(theme)
+                                } label: {
+                                    Label("Delete Theme", systemImage: "trash")
+                                }
+                            }
                     }
                 } header: {
                     Text("Added to Xcode").font(.subheadline).fontWeight(.semibold).foregroundColor(.secondary)
@@ -45,6 +52,13 @@ public struct SidebarView: View {
                         ThemeCard(theme: theme, isSelected: viewModel.selectedTheme.name == theme.name)
                             .onTapGesture {
                                 viewModel.selectTheme(theme)
+                            }
+                            .contextMenu {
+                                Button(role: .destructive) {
+                                    viewModel.deleteTheme(theme)
+                                } label: {
+                                    Label("Delete Theme", systemImage: "trash")
+                                }
                             }
                     }
                 } header: {
