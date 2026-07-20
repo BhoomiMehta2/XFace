@@ -17,6 +17,9 @@ mkdir -p "/tmp/SpectrumInstall"
 unzip -q "/tmp/Spectrum-v1.0.zip" -d "/tmp/SpectrumInstall"
 
 echo "📂 Moving to Applications..."
+# Kill app if it's running
+killall "Spectrum" 2>/dev/null || true
+
 # Remove if exists
 rm -rf "/Applications/Spectrum.app"
 cp -R "/tmp/SpectrumInstall/Spectrum.app" "/Applications/"
