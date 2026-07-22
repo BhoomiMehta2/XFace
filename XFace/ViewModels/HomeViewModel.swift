@@ -370,7 +370,7 @@ public final class HomeViewModel {
         guard let appSupport = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first else {
             return nil
         }
-        let directory = appSupport.appendingPathComponent("Spectrum").appendingPathComponent("ImportedThemes")
+        let directory = appSupport.appendingPathComponent("XFace").appendingPathComponent("ImportedThemes")
         try? fileManager.createDirectory(at: directory, withIntermediateDirectories: true)
         return directory
     }

@@ -7,7 +7,7 @@ struct ThemeForgeApp: App {
     public var body: some Scene {
         WindowGroup {
             HomeView()
-                .navigationTitle("Spectrum")
+                .navigationTitle("XFace")
         }
         .windowStyle(.hiddenTitleBar)
     }

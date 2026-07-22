@@ -6,7 +6,7 @@ public final class ThemeConverter {
     /// Converts a Decoded VS Code Theme configuration into a standard Theme.
     public static func convert(vscodeTheme: VSCodeTheme, defaultName: String = "Untitled Theme") -> Theme {
         let name = vscodeTheme.name ?? defaultName
-        let author = "Spectrum Importer"
+        let author = "XFace Importer"
         
         let colors = vscodeTheme.colors ?? [:]
         let tokenColors = vscodeTheme.tokenColors ?? []

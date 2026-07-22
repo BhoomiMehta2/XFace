@@ -217,7 +217,7 @@ public struct HomeView: View {
         .alert("Restart Xcode Required", isPresented: $viewModel.showRestartAlert) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text("Spectrum has installed your theme, but Xcode is currently open. Please quit Xcode completely (Cmd+Q) and reopen it to apply the theme automatically.")
+            Text("XFace has installed your theme, but Xcode is currently open. Please quit Xcode completely (Cmd+Q) and reopen it to apply the theme automatically.")
         }
     }
 }

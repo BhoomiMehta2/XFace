@@ -1,4 +1,4 @@
-// Spectrum Landing Page JavaScript
+// XFace Landing Page JavaScript
 
 // Theme Configurations
 const themes = {

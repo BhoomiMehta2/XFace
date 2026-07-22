@@ -9,7 +9,7 @@ def make_uuid(name):
 
 def main():
     project_dir = os.path.dirname(os.path.abspath(__file__))
-    source_root = os.path.join(project_dir, "Spectrum")
+    source_root = os.path.join(project_dir, "XFace")
     
     # 1. Discover all source files and resources
     swift_files = []
@@ -37,11 +37,11 @@ def main():
     print(f"Discovered Resource files: {resource_files}")
     
     # 2. Setup project elements UUIDs
-    target_uuid = make_uuid("target_Spectrum")
-    product_uuid = make_uuid("product_Spectrum")
-    project_uuid = make_uuid("project_Spectrum")
+    target_uuid = make_uuid("target_XFace")
+    product_uuid = make_uuid("product_XFace")
+    project_uuid = make_uuid("project_XFace")
     
-    main_group_uuid = make_uuid("group_Spectrum_Root")
+    main_group_uuid = make_uuid("group_XFace_Root")
     products_group_uuid = make_uuid("group_Products")
     
     sources_build_phase_uuid = make_uuid("phase_sources")
@@ -61,9 +61,9 @@ def main():
     build_files = []
     
     # Add product reference
-    product_ref_uuid = make_uuid("product_ref_Spectrum")
+    product_ref_uuid = make_uuid("product_ref_XFace")
     file_references.append(
-        f'\t\t{product_ref_uuid} /* Spectrum.app */ = {{isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectrum.app; sourceTree = BUILT_PRODUCTS_DIR; }};'
+        f'\t\t{product_ref_uuid} /* XFace.app */ = {{isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFace.app; sourceTree = BUILT_PRODUCTS_DIR; }};'
     )
     
     # Add source file references & build files
@@ -126,7 +126,7 @@ def main():
     group_declarations.append(f"""\t\t{products_group_uuid} /* Products */ = {{
 			isa = PBXGroup;
 			children = (
-				{product_ref_uuid} /* Spectrum.app */,
+				{product_ref_uuid} /* XFace.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@ def main():
 {g_children_str}
 			);
 			name = {g};
-			path = Spectrum/{g};
+			path = XFace/{g};
 			sourceTree = "<group>";
 		}};""")
 
@@ -162,13 +162,13 @@ def main():
 					DEVELOPMENT_ASSET_PATHS = "";
 					ENABLE_PREVIEWS = YES;
 					GENERATE_INFOPLIST_FILE = NO;
-					INFOPLIST_FILE = "Spectrum/Resources/Info.plist";
+					INFOPLIST_FILE = "XFace/Resources/Info.plist";
 					LD_RUNPATH_SEARCH_PATHS = (
 						"$(inherited)",
 						"@executable_path/../Frameworks",
 					);
 					MACOSX_DEPLOYMENT_TARGET = 15.0;
-					PRODUCT_BUNDLE_IDENTIFIER = com.bhoomi.Spectrum;
+					PRODUCT_BUNDLE_IDENTIFIER = com.bhoomi.XFace;
 					PRODUCT_NAME = "$(TARGET_NAME)";
 					SWIFT_VERSION = 6.0;
 				}"""
@@ -274,9 +274,9 @@ def main():
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		{target_uuid} /* Spectrum */ = {{
+		{target_uuid} /* XFace */ = {{
 			isa = PBXNativeTarget;
-			buildConfigurationList = {build_config_list_target_uuid} /* Build configuration list for PBXNativeTarget "Spectrum" */;
+			buildConfigurationList = {build_config_list_target_uuid} /* Build configuration list for PBXNativeTarget "XFace" */;
 			buildPhases = (
 				{sources_build_phase_uuid} /* Sources */,
 				{frameworks_build_phase_uuid} /* Frameworks */,
@@ -286,9 +286,9 @@ def main():
 			);
 			dependencies = (
 			);
-			name = Spectrum;
-			productName = Spectrum;
-			productReference = {product_ref_uuid} /* Spectrum.app */;
+			name = XFace;
+			productName = XFace;
+			productReference = {product_ref_uuid} /* XFace.app */;
 			productType = "com.apple.product-type.application";
 		}};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@ def main():
 					}};
 				}};
 			}};
-			buildConfigurationList = {build_config_list_project_uuid} /* Build configuration list for PBXProject "Spectrum" */;
+			buildConfigurationList = {build_config_list_project_uuid} /* Build configuration list for PBXProject "XFace" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,7 +320,7 @@ def main():
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				{target_uuid} /* Spectrum */,
+				{target_uuid} /* XFace */,
 			);
 		}};
 /* End PBXProject section */
@@ -371,7 +371,7 @@ def main():
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		{build_config_list_project_uuid} /* Build configuration list for PBXProject "Spectrum" */ = {{
+		{build_config_list_project_uuid} /* Build configuration list for PBXProject "XFace" */ = {{
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				{debug_config_project_uuid} /* Debug */,
@@ -380,7 +380,7 @@ def main():
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		}};
-		{build_config_list_target_uuid} /* Build configuration list for PBXNativeTarget "Spectrum" */ = {{
+		{build_config_list_target_uuid} /* Build configuration list for PBXNativeTarget "XFace" */ = {{
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				{debug_config_target_uuid} /* Debug */,
@@ -396,7 +396,7 @@ def main():
 """
     
     # Write PBXPROJ
-    xcodeproj_dir = os.path.join(project_dir, "Spectrum.xcodeproj")
+    xcodeproj_dir = os.path.join(project_dir, "XFace.xcodeproj")
     os.makedirs(xcodeproj_dir, exist_ok=True)
     pbxproj_path = os.path.join(xcodeproj_dir, "project.pbxproj")
     with open(pbxproj_path, "w") as f:
@@ -437,9 +437,9 @@ def main():
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "{target_uuid}"
-               BuildableName = "Spectrum.app"
-               BlueprintName = "Spectrum"
-               ReferencedContainer = "container:Spectrum.xcodeproj">
+               BuildableName = "XFace.app"
+               BlueprintName = "XFace"
+               ReferencedContainer = "container:XFace.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -467,9 +467,9 @@ def main():
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "{target_uuid}"
-            BuildableName = "Spectrum.app"
-            BlueprintName = "Spectrum"
-            ReferencedContainer = "container:Spectrum.xcodeproj">
+            BuildableName = "XFace.app"
+            BlueprintName = "XFace"
+            ReferencedContainer = "container:XFace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -484,9 +484,9 @@ def main():
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "{target_uuid}"
-            BuildableName = "Spectrum.app"
-            BlueprintName = "Spectrum"
-            ReferencedContainer = "container:Spectrum.xcodeproj">
+            BuildableName = "XFace.app"
+            BlueprintName = "XFace"
+            ReferencedContainer = "container:XFace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -499,7 +499,7 @@ def main():
    </ArchiveAction>
 </Scheme>
 """
-    with open(os.path.join(scheme_dir, "Spectrum.xcscheme"), "w") as f:
+    with open(os.path.join(scheme_dir, "XFace.xcscheme"), "w") as f:
         f.write(scheme_data)
     print("Generated Scheme and Workspace.")
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A45A32BFE3AC1112CA98695"
-               BuildableName = "Spectrum.app"
-               BlueprintName = "Spectrum"
-               ReferencedContainer = "container:ThemeForge.xcodeproj">
+               BlueprintIdentifier = "968513286A2FB45797483F50"
+               BuildableName = "XFace.app"
+               BlueprintName = "XFace"
+               ReferencedContainer = "container:XFace.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A45A32BFE3AC1112CA98695"
-            BuildableName = "Spectrum.app"
-            BlueprintName = "Spectrum"
-            ReferencedContainer = "container:ThemeForge.xcodeproj">
+            BlueprintIdentifier = "968513286A2FB45797483F50"
+            BuildableName = "XFace.app"
+            BlueprintName = "XFace"
+            ReferencedContainer = "container:XFace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A45A32BFE3AC1112CA98695"
-            BuildableName = "Spectrum.app"
-            BlueprintName = "Spectrum"
-            ReferencedContainer = "container:ThemeForge.xcodeproj">
+            BlueprintIdentifier = "968513286A2FB45797483F50"
+            BuildableName = "XFace.app"
+            BlueprintName = "XFace"
+            ReferencedContainer = "container:XFace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
