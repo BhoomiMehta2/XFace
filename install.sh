@@ -1,7 +1,15 @@
 #!/bin/bash
 set -e
 
-if [ -d "/Applications/Spectrum.app" ]; then
+# Determine target application directory
+if [ -w "/Applications" ]; then
+    APP_DIR="/Applications"
+else
+    APP_DIR="$HOME/Applications"
+    mkdir -p "$APP_DIR"
+fi
+
+if [ -d "$APP_DIR/Spectrum.app" ]; then
     echo "✨ Updating Spectrum for Xcode to the latest version..."
 else
     echo "✨ Installing Spectrum for Xcode..."
@@ -21,15 +29,15 @@ echo "📂 Moving to Applications..."
 killall "Spectrum" 2>/dev/null || true
 
 # Remove if exists
-rm -rf "/Applications/Spectrum.app"
-cp -R "/tmp/SpectrumInstall/Spectrum.app" "/Applications/"
+rm -rf "$APP_DIR/Spectrum.app"
+cp -R "/tmp/SpectrumInstall/Spectrum.app" "$APP_DIR/"
 
 echo "🛡️  Bypassing Gatekeeper..."
-xattr -d com.apple.quarantine "/Applications/Spectrum.app" 2>/dev/null || true
+xattr -d com.apple.quarantine "$APP_DIR/Spectrum.app" 2>/dev/null || true
 
 echo "🧹 Cleaning up..."
 rm -rf "/tmp/Spectrum-v1.0.zip" "/tmp/SpectrumInstall"
 
 echo "✅ Success! Spectrum is now installed."
 echo "🚀 Opening Spectrum..."
-open "/Applications/Spectrum.app"
+open "$APP_DIR/Spectrum.app"
