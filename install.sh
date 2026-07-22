@@ -17,7 +17,7 @@ fi
 
 echo "📥 Downloading latest XFace-v1.0.zip..."
 
-curl -sL "https://bhoomimehta2.github.io/XFace/XFace-v1.0.zip" -o "/tmp/XFace-v1.0.zip"
+curl -sL "https://bhoomimehta2.github.io/Spectrum/XFace-v1.0.zip" -o "/tmp/XFace-v1.0.zip"
 
 echo "📦 Extracting..."
 rm -rf "/tmp/XFaceInstall"
